@@ -37,8 +37,8 @@ body, html {
 }
 
 #content{
-    transform: scaleY(0);
-    transform-origin: bottom;
+    transform: scale(0);
+    transform-origin: center;
     transition: all 0.75s ease;
 }
 
@@ -78,7 +78,7 @@ body, html {
     margin: 0;
     display: block;
     font-family: 'Kalam', cursive;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
 }
 
 #navToggle {

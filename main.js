@@ -15,41 +15,41 @@ const content = document.getElementById('content')
 const modal = document.getElementById('modal')
 const closeModal = document.getElementById('closeModal')
 
-let i = 0
-let text = "Hello"
+// let i = 0
+// let text = "Hello"
 
-function deleteLetter(){
-    let text = titleText.innerText;
-    let len = text.length;
-    titleText.innerText = text.slice(0,len-1)
-    if(len > 0){
-        setTimeout(deleteLetter,90)
-    } else {
-        setTimeout(typeText, 200)
-    }
-}
+// function deleteLetter(){
+//     let text = titleText.innerText;
+//     let len = text.length;
+//     titleText.innerText = text.slice(0,len-1)
+//     if(len > 0){
+//         setTimeout(deleteLetter,90)
+//     } else {
+//         setTimeout(typeText, 200)
+//     }
+// }
 
-function typeText(){
-    if (i < text.length) {
-        titleText.innerHTML += text.charAt(i)
-        i++
-        setTimeout(typeText, 90)
-    } else if (i === text.length && text === "Hello"){
-        i = 0
-        text = "I'm Kyle. I'm a web developer."
-        setTimeout(deleteLetter, 200)
-    } else {
-        setTimeout(exitTitlePage, 1000)
-    }
-}
+// function typeText(){
+//     if (i < text.length) {
+//         titleText.innerHTML += text.charAt(i)
+//         i++
+//         setTimeout(typeText, 90)
+//     } else if (i === text.length && text === "Hello"){
+//         i = 0
+//         text = "I'm Kyle. I'm a web developer."
+//         setTimeout(deleteLetter, 200)
+//     } else {
+//         setTimeout(exitTitlePage, 1000)
+//     }
+// }
 
-setTimeout(typeText,200)
+// setTimeout(typeText,200)
 
-closeTitleBtn.addEventListener("click", exitTitlePage)
+// closeTitleBtn.addEventListener("click", exitTitlePage)
 
 function exitTitlePage(){
     setTimeout(()=>{
-        pageTitle.style.transform = 'scaleY(0)'
+        // pageTitle.style.transform = 'scaleY(0)'
         content.style.transform = 'scaleY(1)'
         if(window.innerWidth >= 780){
             displayAllProjects()
@@ -179,3 +179,5 @@ closeModal.addEventListener('click', ()=>{
     contactMe.style.opacity = "0"
     setTimeout(()=>(contactMe.style.display = "none"),250)
 })
+
+exitTitlePage()
