@@ -78,7 +78,7 @@ body, html {
     margin: 0;
     display: block;
     font-family: 'Kalam', cursive;
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 #navToggle {
@@ -306,6 +306,10 @@ section h2 {
 @media (min-width: 780px){
     #navToggle{
         display: none
+    }
+
+    #navContent h1{
+        font-size: 2rem;
     }
 
     #navContent{
