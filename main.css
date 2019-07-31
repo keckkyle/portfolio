@@ -365,6 +365,7 @@ section h2 {
         width: 100vw;
         height: 100vh;
         background: rgba(181, 223, 203, 0.50);
+        background: linear-gradient(0deg, rgba(181,223,203,1) 5%, rgba(181,223,203,0.5) 50%);
         opacity: 0;
         z-index: 10;
         transition: all 0.25s ease-in-out;
